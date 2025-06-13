@@ -1,0 +1,27 @@
+data:
+  # 原始合同数据存放目录（请将你的合同文档放入该目录，支持 docx/pdf 格式）
+  raw_dir: r"D:\Contract_star\Contract_risk_detection\data\raw"
+  # 预处理后的合同文本存放目录（程序会将预处理结果存入此目录）
+  processed_dir: r"D:\Contract_star\Contract_risk_detection\data\processed"
+  # Ground truth 文件路径：存放真实标签的 JSON 文件（格式见下文说明）
+  ground_truth_file: r"D:\Contract_star\Contract_risk_detection\data\ground_truth.json"
+  # 风险知识库文件路径：存放风险描述的 JSON 文件（格式见下文说明）
+  risk_knowledge_file: r"D:\Contract_star\Contract_risk_detection\data\risk_knowledge.json"
+
+model:
+  # 使用的 SentenceTransformer 预训练模型名称
+  sentence_transformer_model: "all-MiniLM-L6-v2"
+  # 使用的 siliconflow 模型名称，例如：
+  openai_engine: "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+  # siliconflow API 密钥，请在此填写你从 siliconflow 获得的 API 密钥
+  openai_api_key: "sk-yhesttbcceegwfralrtorniylvhmoodagzjgcwbiqeqzhccb"
+
+experiment:
+  # 检索模块的相似度阈值（建议在0.6-0.8之间调整）
+  retrieval_threshold: 0.4
+  # 调用 prompt 模块时，返回文本的最大 token 数
+  prompt_max_tokens: 150
+  # 调用 COT 模块时，返回文本的最大 token 数
+  cot_max_tokens: 300
+  # 评估时正类的标签，默认 "包含"
+  evaluation_positive_label: "包含"

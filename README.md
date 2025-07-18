@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RPCOT-LMC: Risk Point Chain-of-Thought with Language Model Collaboration
 
 RPCOT-LMC 是一个专注于合同风险识别与分析的智能系统，结合了链式思维推理（Chain-of-Thought）和多模型协作（Language Model Collaboration）技术，实现高精度合同风险点识别与分析。
@@ -148,3 +149,7 @@ python src/run_experiment.py --contract data/raw/contract1_test.docx --ground_tr
 3. 提交您的更改 (`git commit -m 'Add some amazing feature'`)
 4. 推送到分支 (`git push origin feature/amazing-feature`)
 5. 打开一个Pull Request
+=======
+# RPCOT-LMC
+本项目旨在研究低资源场景下的合同风险检测方法，构建一个融合检索增强、Prompt工程与Chain-of-Thought（CoT）推理的端到端风险检测框架（CoT-Risk）。
+>>>>>>> eb4c9907be9743f264cb7813d342389ba2e122e8

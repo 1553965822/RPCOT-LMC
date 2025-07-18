@@ -1,0 +1,67 @@
+{
+  "metrics": {
+    "total_paragraphs": 3,
+    "risk_identified_count": 3,
+    "no_risk_count": 0,
+    "inconclusive_count": 0,
+    "average_confidence": 0.7166666666666667,
+    "high_confidence_count": 1,
+    "low_confidence_count": 0,
+    "risk_percentage": 100.0,
+    "high_confidence_percentage": 33.33333333333333,
+    "low_confidence_percentage": 0.0
+  },
+  "predictions": [
+    {
+      "decision": "包含",
+      "confidence": 0.65,
+      "explanation": "模型协作分析结果：\n两个模型结果一致\n\nMiniCPM分析：\n该条款不存在明显风险，因为...\n\nDeepSeek分析：\n该条款不存在明显风险，因为...",
+      "risk_factors": [],
+      "suggestions": [],
+      "agreement": "两个模型结果一致",
+      "minicpm_decision": "包含",
+      "deepseek_decision": "包含",
+      "minicpm_confidence": 0.65,
+      "deepseek_confidence": 0.65,
+      "paragraph": "甲方可随时解除合同，无需提前通知乙方，也无需支付任何补偿。",
+      "risk_point": "合同解除风险",
+      "collaboration_threshold": 0.2
+    },
+    {
+      "decision": "包含",
+      "confidence": 0.85,
+      "explanation": "模型协作分析结果：\n两个模型结果一致\n\nMiniCPM分析：\n该条款存在违约风险，因为...\n\nDeepSeek分析：\n该条款存在违约风险，因为...",
+      "risk_factors": [
+        "责任划分不清",
+        "条款不明确"
+      ],
+      "suggestions": [
+        "建议明确违约责任",
+        "建议增加保障条款"
+      ],
+      "agreement": "两个模型结果一致",
+      "minicpm_decision": "包含",
+      "deepseek_decision": "包含",
+      "minicpm_confidence": 0.85,
+      "deepseek_confidence": 0.85,
+      "paragraph": "乙方应在本合同终止后30天内移交所有工作资料，如有延迟，每天向甲方支付合同总金额的5%作为违约金。",
+      "risk_point": "合同解除风险",
+      "collaboration_threshold": 0.2
+    },
+    {
+      "decision": "包含",
+      "confidence": 0.65,
+      "explanation": "模型协作分析结果：\n两个模型结果一致\n\nMiniCPM分析：\n该条款不存在明显风险，因为...\n\nDeepSeek分析：\n该条款不存在明显风险，因为...",
+      "risk_factors": [],
+      "suggestions": [],
+      "agreement": "两个模型结果一致",
+      "minicpm_decision": "包含",
+      "deepseek_decision": "包含",
+      "minicpm_confidence": 0.65,
+      "deepseek_confidence": 0.65,
+      "paragraph": "双方一致同意，任何纠纷应通过友好协商解决，协商不成的，任何一方可向有管辖权的人民法院提起诉讼。",
+      "risk_point": "合同解除风险",
+      "collaboration_threshold": 0.2
+    }
+  ]
+}
